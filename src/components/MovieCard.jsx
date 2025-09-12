@@ -1,0 +1,3 @@
+function MovieCard({movie}){
+
+}
