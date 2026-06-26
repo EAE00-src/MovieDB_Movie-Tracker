@@ -8,7 +8,7 @@ export const getTrendingMovies = async () =>{
 }
 //this const/function is responsible for sending search queries for movies and fetching the results back
 export const searchMovieDb = async (query) =>{
-    const response = await fetch(`${BASE_URL}/search/movie?api_key=${import.meta.env.API_KEY}&query=${encodeURIComponent(query)}`);
+    const response = await fetch(`${BASE_URL}/search/movie?api_key=${import.meta.env.VITE_API_KEY}&query=${encodeURIComponent(query)}`);
     const data = await response.json()
     return data.results
 }
